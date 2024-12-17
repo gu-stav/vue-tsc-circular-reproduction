@@ -1,13 +1,13 @@
 <!-- eslint-disable vue/multi-word-component-names -->
 <script setup lang="ts">
-import { computed, defineEmits } from 'vue'
+import { defineEmits, ref } from 'vue'
 
 import { CollapsibleRoot } from 'radix-vue'
 
 import Sublist from './Sublist.vue'
 
 const emit = defineEmits(['branch:click'])
-const isOpen = computed(() => true)
+const isOpen = ref(true)
 </script>
 
 <template>
